@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Sensor Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#data">Sensor Data</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="home">
+            <h1>Welcome to GPS Sensor Data</h1>
+            <p>This website displays data from a GPS sensor using the Google Maps API.</p>
+        </section>
+
+        <section id="map">
+            <h2>Live Map</h2>
+            <!-- Google Maps API integration goes here -->
+            <!-- You will need to replace the placeholder with actual code -->
+            <div id="google-map"></div>
+        </section>
+
+        <section id="data">
+            <h2>Sensor Data</h2>
+            <!-- Sensor data display goes here -->
+            <p>Latitude: <span id="latitude">...</span></p>
+            <p>Longitude: <span id="longitude">...</span></p>
+            <p>Time: <span id="time">...</span></p>
+            <!-- Add more sensor data as needed -->
+        </section>
+    </div>
+
+    <!-- Scripts (Include Google Maps API script) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap" async defer></script>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
